@@ -41,6 +41,15 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
+let navBar = document.querySelector("nav");
+let philo = document.createElement("a");
+let cal = document.createElement("a");
+philo.innerHTML = "Philosophy";
+cal.innerHTML = "Calendar";
+
+navBar.prepend(philo);
+navBar.appendChild(cal);
+
 // //Navigation Bar
 let anchor = document.querySelectorAll("a");
 anchor[0].innerHTML = siteContent["nav"]["nav-item-1"];
@@ -50,8 +59,33 @@ anchor[3].innerHTML = siteContent["nav"]["nav-item-4"];
 anchor[4].innerHTML = siteContent["nav"]["nav-item-5"];
 anchor[5].innerHTML = siteContent["nav"]["nav-item-6"];
 
-let announcement = document.querySelector("h1");
-announcement.textContent = siteContent.cta.h1;
+for (let i = 0; i < anchor.length; i++) {
+  anchor[i].style.color = "green";
+}
+
+
+// let newBreak0 = document.createElement("br");
+//
+let domString = siteContent.cta.h1;
+let str1 = domString.split(' ');
+
+let ctaText = document.querySelector(".cta-text");
+
+let h1First = document.querySelector("h1");
+let h1Second = document.createElement("h1");
+let h1Third = document.createElement("h1");
+
+let firstBreak = document.createElement("br");
+
+h1First.textContent = str1[0];
+h1Second.textContent = str1[1];
+h1Third.textContent = str1[2];
+
+ctaText.append(firstBreak);
+ctaText.append(h1First);
+ctaText.append(h1Second);
+ctaText.append(h1Third);
+
 
 let butn = document.querySelector("button");
 butn.textContent = siteContent.cta.button;
