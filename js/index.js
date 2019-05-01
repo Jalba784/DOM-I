@@ -39,4 +39,46 @@ const siteContent = {
 
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+logo.setAttribute('src', siteContent["nav"]["img-src"]);
+
+// //Navigation Bar
+let anchor = document.querySelectorAll("a");
+anchor[0].innerHTML = siteContent["nav"]["nav-item-1"];
+anchor[1].innerHTML = siteContent["nav"]["nav-item-2"];
+anchor[2].innerHTML = siteContent["nav"]["nav-item-3"];
+anchor[3].innerHTML = siteContent["nav"]["nav-item-4"];
+anchor[4].innerHTML = siteContent["nav"]["nav-item-5"];
+anchor[5].innerHTML = siteContent["nav"]["nav-item-6"];
+
+let announcement = document.querySelector("h1");
+announcement.textContent = siteContent.cta.h1;
+
+let butn = document.querySelector("button");
+butn.textContent = siteContent.cta.button;
+
+let codeImg = document.querySelector("#cta-img");
+codeImg.setAttribute('src', siteContent.cta["img-src"]);
+
+let feat = document.querySelectorAll("h4");
+feat[0].innerHTML = siteContent["main-content"]["features-h4"];
+feat[1].innerHTML = siteContent["main-content"]["about-h4"];
+feat[2].innerHTML = siteContent["main-content"]["services-h4"];
+feat[3].innerHTML = siteContent["main-content"]["product-h4"];
+feat[4].innerHTML = siteContent["main-content"]["vision-h4"];
+feat[5].innerHTML = siteContent.contact["contact-h4"];
+
+let paras = document.querySelectorAll("p");
+paras[0].innerHTML = siteContent["main-content"]["features-content"];
+paras[1].innerHTML = siteContent["main-content"]["about-content"];
+paras[2].innerHTML = siteContent["main-content"]["services-content"];
+paras[3].innerHTML = siteContent["main-content"]["product-content"];
+paras[4].innerHTML = siteContent["main-content"]["vision-content"];
+paras[5].innerHTML = siteContent.contact.address;
+paras[6].innerHTML = siteContent.contact.phone;
+paras[7].innerHTML = siteContent.contact.email;
+paras[8].innerHTML = siteContent.footer.copyright;
+
+//Middle Image of code
+let midImg = document.querySelector("#middle-img");
+midImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
