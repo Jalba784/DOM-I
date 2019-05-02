@@ -79,11 +79,9 @@ h1First.textContent = "Awesome";
 h1Second.textContent = str1[1];
 h1Third.textContent = "Dom";
 
-// ctaText.prepend(firstBreak);
 ctaText.prepend(h1First);
 ctaText.prepend(h1Second);
 ctaText.prepend(h1Third);
-
 
 let butn = document.querySelector("button");
 butn.textContent = siteContent.cta.button;
@@ -99,16 +97,30 @@ feat[3].innerHTML = siteContent["main-content"]["product-h4"];
 feat[4].innerHTML = siteContent["main-content"]["vision-h4"];
 feat[5].innerHTML = siteContent.contact["contact-h4"];
 
+
+
+let contactP = document.querySelector(".contact");
+let newP = document.createElement("p");
+contactP.appendChild(newP);
+console.log(contactP);
+
+
 let paras = document.querySelectorAll("p");
 paras[0].innerHTML = siteContent["main-content"]["features-content"];
 paras[1].innerHTML = siteContent["main-content"]["about-content"];
 paras[2].innerHTML = siteContent["main-content"]["services-content"];
 paras[3].innerHTML = siteContent["main-content"]["product-content"];
 paras[4].innerHTML = siteContent["main-content"]["vision-content"];
-paras[5].innerHTML = siteContent.contact.address;
-paras[6].innerHTML = siteContent.contact.phone;
-paras[7].innerHTML = siteContent.contact.email;
-paras[8].innerHTML = siteContent.footer.copyright;
+let strAd = siteContent.contact.address;
+let newAddress1 = strAd.substring(0, 18);
+let newAddress2 = strAd.substring(19);
+paras[5].innerHTML = newAddress1;
+paras[6].innerHTML = newAddress2;
+paras[7].innerHTML = siteContent.contact.phone;
+paras[8].innerHTML = siteContent.contact.email;
+paras[9].innerHTML = siteContent.footer.copyright;
+
+
 
 //Middle Image of code
 let midImg = document.querySelector("#middle-img");
