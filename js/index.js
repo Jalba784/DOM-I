@@ -59,10 +59,10 @@ anchor[3].innerHTML = siteContent["nav"]["nav-item-4"];
 anchor[4].innerHTML = siteContent["nav"]["nav-item-5"];
 anchor[5].innerHTML = siteContent["nav"]["nav-item-6"];
 
-for (let i = 0; i < anchor.length; i++) {
-  anchor[i].style.color = "green";
-}
-
+//New Nav Anchor color: Green
+let newColor = anchor.forEach(text => {
+  text.style.color = "green";
+});
 
 // let newBreak0 = document.createElement("br");
 //
@@ -75,16 +75,14 @@ let h1First = document.querySelector("h1");
 let h1Second = document.createElement("h1");
 let h1Third = document.createElement("h1");
 
-let firstBreak = document.createElement("br");
-
-h1First.textContent = str1[0];
+h1First.textContent = "Awesome";
 h1Second.textContent = str1[1];
-h1Third.textContent = str1[2];
+h1Third.textContent = "Dom";
 
-ctaText.append(firstBreak);
-ctaText.append(h1First);
-ctaText.append(h1Second);
-ctaText.append(h1Third);
+// ctaText.prepend(firstBreak);
+ctaText.prepend(h1First);
+ctaText.prepend(h1Second);
+ctaText.prepend(h1Third);
 
 
 let butn = document.querySelector("button");
