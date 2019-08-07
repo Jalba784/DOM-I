@@ -110,3 +110,10 @@ pContent[1].textContent = siteContent["main-content"]["about-content"];
 pContent[2].textContent = siteContent["main-content"]["services-content"];
 pContent[3].textContent = siteContent["main-content"]["product-content"];
 pContent[4].textContent = siteContent["main-content"]["vision-content"];
+
+
+/* Contact Info */
+h4Title[5].textContent = siteContent.contact["contact-h4"];
+pContent[5].textContent = siteContent.contact.address;
+pContent[6].textContent = siteContent.contact.phone;
+pContent[7].textContent = siteContent.contact.email;
