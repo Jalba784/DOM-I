@@ -78,3 +78,12 @@ awesomeDom0.textContent = a2;
 awesomeDom1.textContent = a3;
 awesomeDom.appendChild(awesomeDom0);
 awesomeDom0.appendChild(awesomeDom1);
+
+
+/* Button */
+let button = document.querySelector('button');
+button.textContent = siteContent.cta.button;
+
+/* Spherical image of code */
+let circleCode = document.querySelector('#cta-img');
+circleCode.src = siteContent.cta["img-src"];
