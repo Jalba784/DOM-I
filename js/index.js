@@ -51,11 +51,18 @@ let anker4 = document.querySelector('a:nth-child(4)');
 let anker5 = document.querySelector('a:nth-child(5)');
 let anker6 = document.querySelector('a:nth-child(6)');
 anker1.textContent = siteContent.nav["nav-item-1"];
+anker1.style.color = 'green';
 anker2.textContent = siteContent.nav["nav-item-2"];
+anker2.style.color = 'green';
 anker3.textContent = siteContent.nav["nav-item-3"];
+anker3.style.color = 'green';
 anker4.textContent = siteContent.nav["nav-item-4"];
+anker4.style.color = 'green';
 anker5.textContent = siteContent.nav["nav-item-5"];
+anker5.style.color = 'green';
 anker6.textContent = siteContent.nav["nav-item-6"];
+anker6.style.color = 'green';
+
 
 /* Great Idea Logo */
 let greatLogo = document.querySelector('#logo-img');
