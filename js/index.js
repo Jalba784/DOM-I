@@ -60,3 +60,21 @@ anker6.textContent = siteContent.nav["nav-item-6"];
 /* Great Idea Logo */
 let greatLogo = document.querySelector('#logo-img');
 greatLogo.src = siteContent.nav["img-src"];
+
+/* DOM Is Awesome */
+let awesomeDom = document.querySelector('h1');
+let awesomeDom0 = document.createElement('h1');
+let awesomeDom1 = document.createElement('h1');
+let newAwesome = siteContent.cta.h1.split(" ");    // Split string into words
+
+// Added each word to a variable
+let a1 = newAwesome[0];
+let a2 = newAwesome[1];
+let a3 = newAwesome[2];
+
+// Added word to "h1" elements and finally added newly created elements to the DOM
+awesomeDom.textContent = a1;
+awesomeDom0.textContent = a2;
+awesomeDom1.textContent = a3;
+awesomeDom.appendChild(awesomeDom0);
+awesomeDom0.appendChild(awesomeDom1);
