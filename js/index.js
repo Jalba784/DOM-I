@@ -117,3 +117,7 @@ h4Title[5].textContent = siteContent.contact["contact-h4"];
 pContent[5].textContent = siteContent.contact.address;
 pContent[6].textContent = siteContent.contact.phone;
 pContent[7].textContent = siteContent.contact.email;
+
+
+/* Footer */
+pContent[8].textContent = siteContent.footer.copyright;
