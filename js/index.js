@@ -99,6 +99,10 @@ h4Title[2].textContent = siteContent["main-content"]["services-h4"];
 h4Title[3].textContent = siteContent["main-content"]["product-h4"];
 h4Title[4].textContent = siteContent["main-content"]["vision-h4"];
 
+// Main content image
+let middleImg = document.querySelector('.middle-img');
+middleImg.src = siteContent["main-content"]["middle-img-src"];
+
 // Added p's content
 let pContent = document.querySelectorAll('p');
 pContent[0].textContent = siteContent["main-content"]["features-content"];
