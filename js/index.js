@@ -56,3 +56,7 @@ anker3.textContent = siteContent.nav["nav-item-3"];
 anker4.textContent = siteContent.nav["nav-item-4"];
 anker5.textContent = siteContent.nav["nav-item-5"];
 anker6.textContent = siteContent.nav["nav-item-6"];
+
+/* Great Idea Logo */
+let greatLogo = document.querySelector('#logo-img');
+greatLogo.src = siteContent.nav["img-src"];
