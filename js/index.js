@@ -84,6 +84,24 @@ awesomeDom0.appendChild(awesomeDom1);
 let button = document.querySelector('button');
 button.textContent = siteContent.cta.button;
 
+
 /* Spherical image of code */
 let circleCode = document.querySelector('#cta-img');
 circleCode.src = siteContent.cta["img-src"];
+
+
+/* Main Content */
+// Added  h4's
+let h4Title1 = document.querySelectorAll('h4:nth-child(1)');
+let h4Title2 = document.querySelectorAll('h4:nth-child(2)');
+let h4Title3 = document.querySelectorAll('h4:nth-child(3)');
+let h4Title4 = document.querySelectorAll('h4:nth-child(4)');
+let h4Title5 = document.querySelectorAll('h4:nth-child(5)');
+let h4Title6 = document.querySelectorAll('h4:nth-child(6)');
+h4Title1.textContent = siteContent["main-content"]["features-h4"];
+h4Title2.textContent = siteContent["main-content"]["about-h4"];
+h4Title3.textContent = siteContent["main-content"]["services-h4"];
+h4Title4.textContent = siteContent["main-content"]["product-h4"];
+h4Title5.textContent = siteContent["main-content"]["vision-h4"];
+h4Title6.textContent = siteContent.contact["contact-h4"];
+
