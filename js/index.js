@@ -103,5 +103,11 @@ h4Title2.textContent = siteContent["main-content"]["about-h4"];
 h4Title3.textContent = siteContent["main-content"]["services-h4"];
 h4Title4.textContent = siteContent["main-content"]["product-h4"];
 h4Title5.textContent = siteContent["main-content"]["vision-h4"];
-h4Title6.textContent = siteContent.contact["contact-h4"];
 
+// Added p's content
+let pContent = document.querySelectorAll('p');
+pContent[0].textContent = siteContent["main-content"]["features-content"];
+pContent[1].textContent = siteContent["main-content"]["about-content"];
+pContent[2].textContent = siteContent["main-content"]["services-content"];
+pContent[3].textContent = siteContent["main-content"]["product-content"];
+pContent[4].textContent = siteContent["main-content"]["vision-content"];
