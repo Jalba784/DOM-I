@@ -12,7 +12,9 @@ You have been provided a [JSON object](js/index.js) with all the necessary data 
 **Follow these steps to set up and work on your project:**
 
 * [X] Create a forked copy of this project.
+
 * [ ] Add your project manager as collaborator on Github.
+
 * [X] Clone your OWN version of the repository (Not Lambda's by mistake!).
 * [X] Create a new branch: git checkout -b `<firstName-lastName>`.
 * [X] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
@@ -30,13 +32,17 @@ You have been provided a [JSON object](js/index.js) with all the necessary data 
 
 ## Task 2: Update the HTML with the JSON data
 * [X] Remember, NO direct updating of the HTML source is allowed.
+
 * [X] Using your selectors, update the content to match the example file.
+
 * [X] Remember to update the src attributes on images
 
 ## Task 3: Add new content
 * [X] Change the color of the navigation text to be green.
+
 * [X] Utilize `.appendChild()` and `.prepend()` to add two new items to the navigation system. You can call them whatever you want.
 * [X] Check your work by looking at the [original html](original.html) in the browser
+
 
 ## Stretch Goals
 * [ ] Update styles throughout the page as you see fit.  Study what happens when you updated the DOM using style in JavaScript.  
