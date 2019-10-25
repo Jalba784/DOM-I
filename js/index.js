@@ -38,6 +38,98 @@ const siteContent = {
 };
 
 // Example: Update the img src for the logo
+
+// let logo = document.getElementById("logo-img");
+// logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+/* I Begin Here */
+
+/* Nav Bar */
+let anker1 = document.querySelector('a:nth-child(1)');
+let anker2 = document.querySelector('a:nth-child(2)');
+let anker3 = document.querySelector('a:nth-child(3)');
+let anker4 = document.querySelector('a:nth-child(4)');
+let anker5 = document.querySelector('a:nth-child(5)');
+let anker6 = document.querySelector('a:nth-child(6)');
+anker1.textContent = siteContent.nav["nav-item-1"];
+anker1.style.color = 'green';
+anker2.textContent = siteContent.nav["nav-item-2"];
+anker2.style.color = 'green';
+anker3.textContent = siteContent.nav["nav-item-3"];
+anker3.style.color = 'green';
+anker4.textContent = siteContent.nav["nav-item-4"];
+anker4.style.color = 'green';
+anker5.textContent = siteContent.nav["nav-item-5"];
+anker5.style.color = 'green';
+anker6.textContent = siteContent.nav["nav-item-6"];
+anker6.style.color = 'green';
+
+
+/* Great Idea Logo */
+let greatLogo = document.querySelector('#logo-img');
+greatLogo.src = siteContent.nav["img-src"];
+
+/* DOM Is Awesome */
+let awesomeDom = document.querySelector('h1');
+let awesomeDom0 = document.createElement('h1');
+let awesomeDom1 = document.createElement('h1');
+let newAwesome = siteContent.cta.h1.split(" ");    // Split string into words
+
+// Added each word to a variable
+let a1 = newAwesome[0];
+let a2 = newAwesome[1];
+let a3 = newAwesome[2];
+
+// Added word to "h1" elements and finally added newly created elements to the DOM
+awesomeDom.textContent = a1;
+awesomeDom0.textContent = a2;
+awesomeDom1.textContent = a3;
+awesomeDom.appendChild(awesomeDom0);
+awesomeDom0.appendChild(awesomeDom1);
+
+
+/* Button */
+let button = document.querySelector('button');
+button.textContent = siteContent.cta.button;
+
+
+/* Spherical image of code */
+let circleCode = document.querySelector('#cta-img');
+circleCode.src = siteContent.cta["img-src"];
+
+
+/* Main Content */
+// Added  h4's
+let h4Title = document.querySelectorAll('h4');
+h4Title[0].textContent = siteContent["main-content"]["features-h4"];
+h4Title[1].textContent = siteContent["main-content"]["about-h4"];
+h4Title[2].textContent = siteContent["main-content"]["services-h4"];
+h4Title[3].textContent = siteContent["main-content"]["product-h4"];
+h4Title[4].textContent = siteContent["main-content"]["vision-h4"];
+
+// Main content image
+let middleImg = document.querySelector('.middle-img');
+middleImg.src = siteContent["main-content"]["middle-img-src"];
+
+// Added p's content
+let pContent = document.querySelectorAll('p');
+pContent[0].textContent = siteContent["main-content"]["features-content"];
+pContent[1].textContent = siteContent["main-content"]["about-content"];
+pContent[2].textContent = siteContent["main-content"]["services-content"];
+pContent[3].textContent = siteContent["main-content"]["product-content"];
+pContent[4].textContent = siteContent["main-content"]["vision-content"];
+
+
+/* Contact Info */
+h4Title[5].textContent = siteContent.contact["contact-h4"];
+pContent[5].textContent = siteContent.contact.address;
+pContent[6].textContent = siteContent.contact.phone;
+pContent[7].textContent = siteContent.contact.email;
+
+
+/* Footer */
+pContent[8].textContent = siteContent.footer.copyright;
+=======
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
@@ -125,4 +217,5 @@ paras[9].innerHTML = siteContent.footer.copyright;
 //Middle Image of code
 let midImg = document.querySelector("#middle-img");
 midImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
 
